@@ -1,27 +1,45 @@
+'''
+comment
+'''
 import unittest
 import piglatin
 
-class Test_piglatin(unittest.TestCase):
+class TestPiglatin(unittest.TestCase):
+    '''
+    comment
+    '''
     def test_gfdsdg2piglatin(self):
-        AA = 'gfdsdg'
-        BB = piglatin.to_piglatin(AA)
-        CC = AA + '-ay'
-        self.assertEqual(BB, CC)
+        '''
+        comment
+        '''
+        aaa = 'gfdsdg'
+        bbb = piglatin.to_piglatin(aaa)
+        ccc = aaa + '-ay'
+        self.assertEqual(bbb, ccc)
     def test_egg2piglatin(self):
-        aa = 'egg'
-        bb = piglatin.to_piglatin(aa)
-        cc = aa + '-ay'
-        self.assertEqual(bb, cc)
-    def test_Word2piglatin(self):
-        a = 'Word'
-        b = piglatin.to_piglatin(a)
-        c = 'ord-W'+ 'ay'
-        self.assertEqual(b, c)
+        '''
+        comment
+        '''
+        aaa = 'egg'
+        bbb = piglatin.to_piglatin(aaa)
+        ccc = aaa + '-ay'
+        self.assertEqual(bbb, ccc)
+    def test_word2piglatin(self):
+        '''
+        comment
+        '''
+        aaa = 'Word'
+        bbb = piglatin.to_piglatin(aaa)
+        ccc = 'ord-W'+ 'ay'
+        self.assertEqual(bbb, ccc)
     def test_frompiglatin(self):
-        a = 'Word'
-        b = piglatin.to_piglatin(a)
-        c = piglatin.from_piglatin(b)
-        self.assertEqual(a, c)
+        '''
+        comment
+        '''
+        aaa = 'Word'
+        bbb = piglatin.to_piglatin(aaa)
+        ccc = piglatin.from_piglatin(bbb)
+        self.assertEqual(aaa, ccc)
 
 
 
